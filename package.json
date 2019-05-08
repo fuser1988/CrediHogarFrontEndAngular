@@ -1,0 +1,14 @@
+{
+    "name":"crediHogAr",
+    "version":"0.0.0",
+    "author":"fuser1988",
+    "description":" frontEnd crediHogar Project",
+    "dependencies": {
+        
+    },
+    "scripts": {
+        "prestart":"npm install",
+        "start":"http-server -p 8000 -c-1",
+        "test":"echo \"Error: no test implement\" && exit -1 "
+    }
+}
