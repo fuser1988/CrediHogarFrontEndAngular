@@ -1,14 +1,15 @@
 {
-    "name":"crediHogAr",
-    "version":"0.0.0",
-    "author":"fuser1988",
-    "description":" frontEnd crediHogar Project",
+    "name": "crediHogar",
+    "version": "0.0.0",
+    "author": "fuser1988",
+    "description": " frontEnd crediHogar Project",
     "dependencies": {
-        
+        "angular-ui-router": "^0.3.2",
+        "http-server": "^0.11.1"
     },
     "scripts": {
-        "prestart":"npm install",
-        "start":"http-server -p 8000 -c-1",
-        "test":"echo \"Error: no test implement\" && exit -1 "
+        "prestart": "npm install",
+        "start": "http-server  -p 8000 -c-1",
+        "test": "echo \"Error: no test implement\" && exit -1 "
     }
 }

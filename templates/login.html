@@ -1,0 +1,35 @@
+<div class="container">
+     <form name="myForm"> 
+      <div class="login-container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>User</label>
+              <input type="text" name="User" ng-model="loginCtrl.user.username" required class="form-control">
+              <div ng-show="myForm.user.$error.user" class="error">Invalid user!</div>
+              <div ng-show="myForm.user.$error.required &amp;&amp; myForm.user.$touched" class="error">Required!</div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <label>Password</label>
+              <input type="password" name="pass" ng-model="loginCtrl.user.password" required class="form-control">
+              <div ng-show="myForm.pass.$error.required &amp;&amp; myForm.pass.$touched" class="error">Required!</div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+              <button ng-click="loginCtrl.authenticate()" ng-disabled="myForm.$invalid" class="btn btn-success pull-right">Login</button>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div ng-show="loginCtrl.showError" class="alert alert-danger">Wrong credentials!</div>
+            <div ng-show="loginCtrl.showSuccess" class="alert alert-success">Login Successful!</div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>

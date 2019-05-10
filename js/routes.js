@@ -1,12 +1,12 @@
 const Routes = ($stateProvider, $urlRouterProvider) => {
 
-    $urlRouterProvider.otherwise("/");
+    $urlRouterProvider.otherwise("/login");
 
     $stateProvider
 
         .state("login", {
-            url: "/",
+            url: "/login",
             templateUrl: "templates/login.html",
-            controller: "LoginController as ctrLogin"
+            controller: "LoginController as loginCtrl"
         });
 }        
